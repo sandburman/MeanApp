@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>app.js</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" media="all" href="doc-style.css" />
+  <script src="doc-filelist.js"></script>
+  <script>
+    var relativeDir = "";
+    var thisFile = "app.js";
+    var defaultSidebar = true;
+  </script>
+  <script src="doc-script.js"></script>
+
+</head>
+<body>
+  <div id="sidebar_wrapper">
+    <div id="sidebar_switch">
+      <span class="tree">Files</span>
+      <span class="headings">Headings</span>
+    </div>
+    <div id="tree"></div>
+    <div id="headings">
+
+    </div>
+  </div>
+  <div id="sidebar-toggle"></div>
+  <div id="container">
+    <div class="background highlight"></div>
+<table cellpadding="0" cellspacing="0">
+  <tbody>
+    
+      <tr>
+        <td class="docs">
+          <h1>app.js</h1>
+        </td>
+        <td class="code highlight"></td>
+      </tr>
+    
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-1" id="section-1"></a>
+</div>
+
+        </td>
+        <td class="code highlight">
+          <pre class="javascript"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express'</span>);
+<span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
+<span class="hljs-keyword">const</span> bodyParser = <span class="hljs-built_in">require</span>(<span class="hljs-string">'body-parser'</span>);
+<span class="hljs-keyword">const</span> cors = <span class="hljs-built_in">require</span>(<span class="hljs-string">'cors'</span>);
+<span class="hljs-keyword">const</span> passport = <span class="hljs-built_in">require</span>(<span class="hljs-string">'passport'</span>);
+<span class="hljs-keyword">const</span> mongoose = <span class="hljs-built_in">require</span>(<span class="hljs-string">'mongoose'</span>);
+<span class="hljs-keyword">const</span> config = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./config/database'</span>);
+
+mongoose.connect(config.database);
+
+mongoose.connection.on(<span class="hljs-string">'connected'</span>, () =&gt; {
+   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Connected to database '</span> + config.database); 
+});
+
+mongoose.connection.on(<span class="hljs-string">'error'</span>, (err) =&gt; {
+   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Error connecting to database '</span> + err); 
+});
+
+<span class="hljs-keyword">const</span> app = express();
+
+<span class="hljs-keyword">const</span> users = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./routes/users'</span>)
+
+<span class="hljs-keyword">const</span> port = <span class="hljs-number">3000</span>;
+
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-2" id="section-2"></a>
+</div>
+<p>Use Cors middleware</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="javascript">app.use(cors());
+
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-3" id="section-3"></a>
+</div>
+<p>Set Static Folder</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="javascript">app.use(express.static(path.join(__dirname, <span class="hljs-string">'public'</span>)));
+
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-4" id="section-4"></a>
+</div>
+<p>Body-Parser middleware</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="javascript">app.use(bodyParser.json());
+
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-5" id="section-5"></a>
+</div>
+<p>Passport middleware</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="javascript">app.use(passport.initialize());
+app.use(passport.session());
+
+<span class="hljs-built_in">require</span>(<span class="hljs-string">'./config/passport'</span>)(passport);
+
+app.use(<span class="hljs-string">'/users'</span>, users);
+
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-6" id="section-6"></a>
+</div>
+<p>Index Route</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="javascript">app.get(<span class="hljs-string">'/'</span>, (req, res) =&gt; {
+    res.send(<span class="hljs-string">'Invalid Enpoint'</span>);
+});
+
+app.get(<span class="hljs-string">'*'</span>, (req, res) =&gt; {
+    res.sendFile(path.join(__dirname,<span class="hljs-string">'public/index.html'</span>));
+});
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-7" id="section-7"></a>
+</div>
+<p>Start Server</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="javascript">app.listen(port, () =&gt; {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Server Started on port '</span> + port);
+});
+</pre>
+        </td>
+      </tr>
+    
+  </tbody>
+</table>
+
+  </div>
+</body>
+</html>

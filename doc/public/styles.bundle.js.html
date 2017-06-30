@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>styles.bundle.js</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" media="all" href="../doc-style.css" />
+  <script src="../doc-filelist.js"></script>
+  <script>
+    var relativeDir = "../";
+    var thisFile = "public\\styles.bundle.js";
+    var defaultSidebar = true;
+  </script>
+  <script src="../doc-script.js"></script>
+
+</head>
+<body>
+  <div id="sidebar_wrapper">
+    <div id="sidebar_switch">
+      <span class="tree">Files</span>
+      <span class="headings">Headings</span>
+    </div>
+    <div id="tree"></div>
+    <div id="headings">
+
+      <div class="heading h1">
+        <a href="#sourcemappingurlstyles.bundle.map">sourceMappingURL=styles.bundle.map</a>
+      </div>
+
+    </div>
+  </div>
+  <div id="sidebar-toggle"></div>
+  <div id="container">
+    <div class="background highlight"></div>
+<table cellpadding="0" cellspacing="0">
+  <tbody>
+    
+      <tr>
+        <td class="docs">
+          <h1>styles.bundle.js</h1>
+        </td>
+        <td class="code highlight"></td>
+      </tr>
+    
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-1" id="section-1"></a>
+</div>
+
+        </td>
+        <td class="code highlight">
+          <pre class="javascript">webpackJsonp([<span class="hljs-number">2</span>,<span class="hljs-number">4</span>],{
+
+<span class="hljs-comment">/***/</span> <span class="hljs-number">391</span>:
+<span class="hljs-comment">/***/</span> (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">module, exports, __webpack_require__</span>) </span>{
+
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-2" id="section-2"></a>
+</div>
+<p>style-loader: Adds some css to the DOM by adding a <style> tag</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="javascript">
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-3" id="section-3"></a>
+</div>
+<p>load the styles</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="javascript"><span class="hljs-keyword">var</span> content = __webpack_require__(<span class="hljs-number">671</span>);
+<span class="hljs-keyword">if</span>(<span class="hljs-keyword">typeof</span> content === <span class="hljs-string">'string'</span>) content = [[<span class="hljs-built_in">module</span>.i, content, <span class="hljs-string">''</span>]];
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-4" id="section-4"></a>
+</div>
+<p>add the styles to the DOM</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="javascript"><span class="hljs-keyword">var</span> update = __webpack_require__(<span class="hljs-number">709</span>)(content, {});
+<span class="hljs-keyword">if</span>(content.locals) <span class="hljs-built_in">module</span>.exports = content.locals;
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-5" id="section-5"></a>
+</div>
+<p>Hot Module Replacement</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="javascript"><span class="hljs-keyword">if</span>(<span class="hljs-literal">false</span>) {
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-6" id="section-6"></a>
+</div>
+<p>When the styles change, update the <style> tags</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="javascript">	<span class="hljs-keyword">if</span>(!content.locals) {
+		<span class="hljs-built_in">module</span>.hot.accept(<span class="hljs-string">"!!../node_modules/css-loader/index.js?{\"sourceMap\":false}!../node_modules/postcss-loader/index.js!./styles.css"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+			<span class="hljs-keyword">var</span> newContent = <span class="hljs-built_in">require</span>(<span class="hljs-string">"!!../node_modules/css-loader/index.js?{\"sourceMap\":false}!../node_modules/postcss-loader/index.js!./styles.css"</span>);
+			<span class="hljs-keyword">if</span>(<span class="hljs-keyword">typeof</span> newContent === <span class="hljs-string">'string'</span>) newContent = [[<span class="hljs-built_in">module</span>.id, newContent, <span class="hljs-string">''</span>]];
+			update(newContent);
+		});
+	}
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-7" id="section-7"></a>
+</div>
+<p>When the module is disposed, remove the <style> tags</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="javascript">	<span class="hljs-built_in">module</span>.hot.dispose(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ update(); });
+}
+
+<span class="hljs-comment">/***/</span> }),
+
+<span class="hljs-comment">/***/</span> <span class="hljs-number">671</span>:
+<span class="hljs-comment">/***/</span> (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">module, exports, __webpack_require__</span>) </span>{
+
+exports = <span class="hljs-built_in">module</span>.exports = __webpack_require__(<span class="hljs-number">672</span>)();
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-8" id="section-8"></a>
+</div>
+<p>imports</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="javascript">
+
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-9" id="section-9"></a>
+</div>
+<p>module</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="javascript">exports.push([<span class="hljs-built_in">module</span>.i, <span class="hljs-string">"/* You can add global styles to this file, and also import other style files */\n"</span>, <span class="hljs-string">""</span>]);
+
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-10" id="section-10"></a>
+</div>
+<p>exports</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="javascript">
+
+<span class="hljs-comment">/***/</span> }),
+
+<span class="hljs-comment">/***/</span> <span class="hljs-number">672</span>:
+<span class="hljs-comment">/***/</span> (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">module, exports</span>) </span>{
+
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-11" id="section-11"></a>
+</div>
+<div class="dox">
+<div class="summary">
+<p>MIT License http://www.opensource.org/licenses/mit-license.php
+Author Tobias Koppers @sokra</p>
+</div>
+<div class="body">
+</div>
+</div>
+css base code, injected by the css-loader
+
+        </td>
+        <td class="code highlight">
+          <pre class="javascript"><span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+	<span class="hljs-keyword">var</span> list = [];
+
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-12" id="section-12"></a>
+</div>
+<p>return the list of modules as css string</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="javascript">	list.toString = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">toString</span>(<span class="hljs-params"></span>) </span>{
+		<span class="hljs-keyword">var</span> result = [];
+		<span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-keyword">this</span>.length; i++) {
+			<span class="hljs-keyword">var</span> item = <span class="hljs-keyword">this</span>[i];
+			<span class="hljs-keyword">if</span>(item[<span class="hljs-number">2</span>]) {
+				result.push(<span class="hljs-string">"@media "</span> + item[<span class="hljs-number">2</span>] + <span class="hljs-string">"{"</span> + item[<span class="hljs-number">1</span>] + <span class="hljs-string">"}"</span>);
+			} <span class="hljs-keyword">else</span> {
+				result.push(item[<span class="hljs-number">1</span>]);
+			}
+		}
+		<span class="hljs-keyword">return</span> result.join(<span class="hljs-string">""</span>);
+	};
+
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-13" id="section-13"></a>
+</div>
+<p>import a list of modules into the list</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="javascript">	list.i = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">modules, mediaQuery</span>) </span>{
+		<span class="hljs-keyword">if</span>(<span class="hljs-keyword">typeof</span> modules === <span class="hljs-string">"string"</span>)
+			modules = [[<span class="hljs-literal">null</span>, modules, <span class="hljs-string">""</span>]];
+		<span class="hljs-keyword">var</span> alreadyImportedModules = {};
+		<span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-keyword">this</span>.length; i++) {
+			<span class="hljs-keyword">var</span> id = <span class="hljs-keyword">this</span>[i][<span class="hljs-number">0</span>];
+			<span class="hljs-keyword">if</span>(<span class="hljs-keyword">typeof</span> id === <span class="hljs-string">"number"</span>)
+				alreadyImportedModules[id] = <span class="hljs-literal">true</span>;
+		}
+		<span class="hljs-keyword">for</span>(i = <span class="hljs-number">0</span>; i &lt; modules.length; i++) {
+			<span class="hljs-keyword">var</span> item = modules[i];
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-14" id="section-14"></a>
+</div>
+<p>skip already imported module
+this implementation is not 100% perfect for weird media query combinations
+when a module is imported multiple times with different media queries.
+I hope this will never occur (Hey this way we have smaller bundles)</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="javascript">			<span class="hljs-keyword">if</span>(<span class="hljs-keyword">typeof</span> item[<span class="hljs-number">0</span>] !== <span class="hljs-string">"number"</span> || !alreadyImportedModules[item[<span class="hljs-number">0</span>]]) {
+				<span class="hljs-keyword">if</span>(mediaQuery &amp;&amp; !item[<span class="hljs-number">2</span>]) {
+					item[<span class="hljs-number">2</span>] = mediaQuery;
+				} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(mediaQuery) {
+					item[<span class="hljs-number">2</span>] = <span class="hljs-string">"("</span> + item[<span class="hljs-number">2</span>] + <span class="hljs-string">") and ("</span> + mediaQuery + <span class="hljs-string">")"</span>;
+				}
+				list.push(item);
+			}
+		}
+	};
+	<span class="hljs-keyword">return</span> list;
+};
+
+
+<span class="hljs-comment">/***/</span> }),
+
+<span class="hljs-comment">/***/</span> <span class="hljs-number">709</span>:
+<span class="hljs-comment">/***/</span> (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">module, exports</span>) </span>{
+
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-15" id="section-15"></a>
+</div>
+<div class="dox">
+<div class="summary">
+<p>MIT License http://www.opensource.org/licenses/mit-license.php
+Author Tobias Koppers @sokra</p>
+</div>
+<div class="body">
+</div>
+</div>
+
+        </td>
+        <td class="code highlight">
+          <pre class="javascript"><span class="hljs-keyword">var</span> stylesInDom = {},
+	memoize = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">fn</span>) </span>{
+		<span class="hljs-keyword">var</span> memo;
+		<span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+			<span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> memo === <span class="hljs-string">"undefined"</span>) memo = fn.apply(<span class="hljs-keyword">this</span>, <span class="hljs-built_in">arguments</span>);
+			<span class="hljs-keyword">return</span> memo;
+		};
+	},
+	isOldIE = memoize(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+		<span class="hljs-keyword">return</span> <span class="hljs-regexp">/msie [6-9]\b/</span>.test(self.navigator.userAgent.toLowerCase());
+	}),
+	getHeadElement = memoize(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+		<span class="hljs-keyword">return</span> <span class="hljs-built_in">document</span>.head || <span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">"head"</span>)[<span class="hljs-number">0</span>];
+	}),
+	singletonElement = <span class="hljs-literal">null</span>,
+	singletonCounter = <span class="hljs-number">0</span>,
+	styleElementsInsertedAtTop = [];
+
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">list, options</span>) </span>{
+	<span class="hljs-keyword">if</span>(<span class="hljs-keyword">typeof</span> DEBUG !== <span class="hljs-string">"undefined"</span> &amp;&amp; DEBUG) {
+		<span class="hljs-keyword">if</span>(<span class="hljs-keyword">typeof</span> <span class="hljs-built_in">document</span> !== <span class="hljs-string">"object"</span>) <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">"The style-loader cannot be used in a non-browser environment"</span>);
+	}
+
+	options = options || {};
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-16" id="section-16"></a>
+</div>
+<p>Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
+tags it will allow on a page</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="javascript">	<span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> options.singleton === <span class="hljs-string">"undefined"</span>) options.singleton = isOldIE();
+
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-17" id="section-17"></a>
+</div>
+<p>By default, add <style> tags to the bottom of <head>.</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="javascript">	<span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> options.insertAt === <span class="hljs-string">"undefined"</span>) options.insertAt = <span class="hljs-string">"bottom"</span>;
+
+	<span class="hljs-keyword">var</span> styles = listToStyles(list);
+	addStylesToDom(styles, options);
+
+	<span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">update</span>(<span class="hljs-params">newList</span>) </span>{
+		<span class="hljs-keyword">var</span> mayRemove = [];
+		<span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; styles.length; i++) {
+			<span class="hljs-keyword">var</span> item = styles[i];
+			<span class="hljs-keyword">var</span> domStyle = stylesInDom[item.id];
+			domStyle.refs--;
+			mayRemove.push(domStyle);
+		}
+		<span class="hljs-keyword">if</span>(newList) {
+			<span class="hljs-keyword">var</span> newStyles = listToStyles(newList);
+			addStylesToDom(newStyles, options);
+		}
+		<span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; mayRemove.length; i++) {
+			<span class="hljs-keyword">var</span> domStyle = mayRemove[i];
+			<span class="hljs-keyword">if</span>(domStyle.refs === <span class="hljs-number">0</span>) {
+				<span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> j = <span class="hljs-number">0</span>; j &lt; domStyle.parts.length; j++)
+					domStyle.parts[j]();
+				<span class="hljs-keyword">delete</span> stylesInDom[domStyle.id];
+			}
+		}
+	};
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addStylesToDom</span>(<span class="hljs-params">styles, options</span>) </span>{
+	<span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; styles.length; i++) {
+		<span class="hljs-keyword">var</span> item = styles[i];
+		<span class="hljs-keyword">var</span> domStyle = stylesInDom[item.id];
+		<span class="hljs-keyword">if</span>(domStyle) {
+			domStyle.refs++;
+			<span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> j = <span class="hljs-number">0</span>; j &lt; domStyle.parts.length; j++) {
+				domStyle.parts[j](item.parts[j]);
+			}
+			<span class="hljs-keyword">for</span>(; j &lt; item.parts.length; j++) {
+				domStyle.parts.push(addStyle(item.parts[j], options));
+			}
+		} <span class="hljs-keyword">else</span> {
+			<span class="hljs-keyword">var</span> parts = [];
+			<span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> j = <span class="hljs-number">0</span>; j &lt; item.parts.length; j++) {
+				parts.push(addStyle(item.parts[j], options));
+			}
+			stylesInDom[item.id] = {<span class="hljs-attr">id</span>: item.id, <span class="hljs-attr">refs</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">parts</span>: parts};
+		}
+	}
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">listToStyles</span>(<span class="hljs-params">list</span>) </span>{
+	<span class="hljs-keyword">var</span> styles = [];
+	<span class="hljs-keyword">var</span> newStyles = {};
+	<span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; list.length; i++) {
+		<span class="hljs-keyword">var</span> item = list[i];
+		<span class="hljs-keyword">var</span> id = item[<span class="hljs-number">0</span>];
+		<span class="hljs-keyword">var</span> css = item[<span class="hljs-number">1</span>];
+		<span class="hljs-keyword">var</span> media = item[<span class="hljs-number">2</span>];
+		<span class="hljs-keyword">var</span> sourceMap = item[<span class="hljs-number">3</span>];
+		<span class="hljs-keyword">var</span> part = {<span class="hljs-attr">css</span>: css, <span class="hljs-attr">media</span>: media, <span class="hljs-attr">sourceMap</span>: sourceMap};
+		<span class="hljs-keyword">if</span>(!newStyles[id])
+			styles.push(newStyles[id] = {<span class="hljs-attr">id</span>: id, <span class="hljs-attr">parts</span>: [part]});
+		<span class="hljs-keyword">else</span>
+			newStyles[id].parts.push(part);
+	}
+	<span class="hljs-keyword">return</span> styles;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">insertStyleElement</span>(<span class="hljs-params">options, styleElement</span>) </span>{
+	<span class="hljs-keyword">var</span> head = getHeadElement();
+	<span class="hljs-keyword">var</span> lastStyleElementInsertedAtTop = styleElementsInsertedAtTop[styleElementsInsertedAtTop.length - <span class="hljs-number">1</span>];
+	<span class="hljs-keyword">if</span> (options.insertAt === <span class="hljs-string">"top"</span>) {
+		<span class="hljs-keyword">if</span>(!lastStyleElementInsertedAtTop) {
+			head.insertBefore(styleElement, head.firstChild);
+		} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(lastStyleElementInsertedAtTop.nextSibling) {
+			head.insertBefore(styleElement, lastStyleElementInsertedAtTop.nextSibling);
+		} <span class="hljs-keyword">else</span> {
+			head.appendChild(styleElement);
+		}
+		styleElementsInsertedAtTop.push(styleElement);
+	} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (options.insertAt === <span class="hljs-string">"bottom"</span>) {
+		head.appendChild(styleElement);
+	} <span class="hljs-keyword">else</span> {
+		<span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">"Invalid value for parameter 'insertAt'. Must be 'top' or 'bottom'."</span>);
+	}
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">removeStyleElement</span>(<span class="hljs-params">styleElement</span>) </span>{
+	styleElement.parentNode.removeChild(styleElement);
+	<span class="hljs-keyword">var</span> idx = styleElementsInsertedAtTop.indexOf(styleElement);
+	<span class="hljs-keyword">if</span>(idx &gt;= <span class="hljs-number">0</span>) {
+		styleElementsInsertedAtTop.splice(idx, <span class="hljs-number">1</span>);
+	}
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createStyleElement</span>(<span class="hljs-params">options</span>) </span>{
+	<span class="hljs-keyword">var</span> styleElement = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">"style"</span>);
+	styleElement.type = <span class="hljs-string">"text/css"</span>;
+	insertStyleElement(options, styleElement);
+	<span class="hljs-keyword">return</span> styleElement;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createLinkElement</span>(<span class="hljs-params">options</span>) </span>{
+	<span class="hljs-keyword">var</span> linkElement = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">"link"</span>);
+	linkElement.rel = <span class="hljs-string">"stylesheet"</span>;
+	insertStyleElement(options, linkElement);
+	<span class="hljs-keyword">return</span> linkElement;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addStyle</span>(<span class="hljs-params">obj, options</span>) </span>{
+	<span class="hljs-keyword">var</span> styleElement, update, remove;
+
+	<span class="hljs-keyword">if</span> (options.singleton) {
+		<span class="hljs-keyword">var</span> styleIndex = singletonCounter++;
+		styleElement = singletonElement || (singletonElement = createStyleElement(options));
+		update = applyToSingletonTag.bind(<span class="hljs-literal">null</span>, styleElement, styleIndex, <span class="hljs-literal">false</span>);
+		remove = applyToSingletonTag.bind(<span class="hljs-literal">null</span>, styleElement, styleIndex, <span class="hljs-literal">true</span>);
+	} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(obj.sourceMap &amp;&amp;
+		<span class="hljs-keyword">typeof</span> URL === <span class="hljs-string">"function"</span> &amp;&amp;
+		<span class="hljs-keyword">typeof</span> URL.createObjectURL === <span class="hljs-string">"function"</span> &amp;&amp;
+		<span class="hljs-keyword">typeof</span> URL.revokeObjectURL === <span class="hljs-string">"function"</span> &amp;&amp;
+		<span class="hljs-keyword">typeof</span> Blob === <span class="hljs-string">"function"</span> &amp;&amp;
+		<span class="hljs-keyword">typeof</span> btoa === <span class="hljs-string">"function"</span>) {
+		styleElement = createLinkElement(options);
+		update = updateLink.bind(<span class="hljs-literal">null</span>, styleElement);
+		remove = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+			removeStyleElement(styleElement);
+			<span class="hljs-keyword">if</span>(styleElement.href)
+				URL.revokeObjectURL(styleElement.href);
+		};
+	} <span class="hljs-keyword">else</span> {
+		styleElement = createStyleElement(options);
+		update = applyToTag.bind(<span class="hljs-literal">null</span>, styleElement);
+		remove = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+			removeStyleElement(styleElement);
+		};
+	}
+
+	update(obj);
+
+	<span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">updateStyle</span>(<span class="hljs-params">newObj</span>) </span>{
+		<span class="hljs-keyword">if</span>(newObj) {
+			<span class="hljs-keyword">if</span>(newObj.css === obj.css &amp;&amp; newObj.media === obj.media &amp;&amp; newObj.sourceMap === obj.sourceMap)
+				<span class="hljs-keyword">return</span>;
+			update(obj = newObj);
+		} <span class="hljs-keyword">else</span> {
+			remove();
+		}
+	};
+}
+
+<span class="hljs-keyword">var</span> replaceText = (<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+	<span class="hljs-keyword">var</span> textStore = [];
+
+	<span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">index, replacement</span>) </span>{
+		textStore[index] = replacement;
+		<span class="hljs-keyword">return</span> textStore.filter(<span class="hljs-built_in">Boolean</span>).join(<span class="hljs-string">'\n'</span>);
+	};
+})();
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">applyToSingletonTag</span>(<span class="hljs-params">styleElement, index, remove, obj</span>) </span>{
+	<span class="hljs-keyword">var</span> css = remove ? <span class="hljs-string">""</span> : obj.css;
+
+	<span class="hljs-keyword">if</span> (styleElement.styleSheet) {
+		styleElement.styleSheet.cssText = replaceText(index, css);
+	} <span class="hljs-keyword">else</span> {
+		<span class="hljs-keyword">var</span> cssNode = <span class="hljs-built_in">document</span>.createTextNode(css);
+		<span class="hljs-keyword">var</span> childNodes = styleElement.childNodes;
+		<span class="hljs-keyword">if</span> (childNodes[index]) styleElement.removeChild(childNodes[index]);
+		<span class="hljs-keyword">if</span> (childNodes.length) {
+			styleElement.insertBefore(cssNode, childNodes[index]);
+		} <span class="hljs-keyword">else</span> {
+			styleElement.appendChild(cssNode);
+		}
+	}
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">applyToTag</span>(<span class="hljs-params">styleElement, obj</span>) </span>{
+	<span class="hljs-keyword">var</span> css = obj.css;
+	<span class="hljs-keyword">var</span> media = obj.media;
+
+	<span class="hljs-keyword">if</span>(media) {
+		styleElement.setAttribute(<span class="hljs-string">"media"</span>, media)
+	}
+
+	<span class="hljs-keyword">if</span>(styleElement.styleSheet) {
+		styleElement.styleSheet.cssText = css;
+	} <span class="hljs-keyword">else</span> {
+		<span class="hljs-keyword">while</span>(styleElement.firstChild) {
+			styleElement.removeChild(styleElement.firstChild);
+		}
+		styleElement.appendChild(<span class="hljs-built_in">document</span>.createTextNode(css));
+	}
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">updateLink</span>(<span class="hljs-params">linkElement, obj</span>) </span>{
+	<span class="hljs-keyword">var</span> css = obj.css;
+	<span class="hljs-keyword">var</span> sourceMap = obj.sourceMap;
+
+	<span class="hljs-keyword">if</span>(sourceMap) {
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-18" id="section-18"></a>
+</div>
+<p>http://stackoverflow.com/a/26603875</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="javascript">		css += <span class="hljs-string">"\n/*# sourceMappingURL=data:application/json;base64,"</span> + btoa(<span class="hljs-built_in">unescape</span>(<span class="hljs-built_in">encodeURIComponent</span>(<span class="hljs-built_in">JSON</span>.stringify(sourceMap)))) + <span class="hljs-string">" */"</span>;
+	}
+
+	<span class="hljs-keyword">var</span> blob = <span class="hljs-keyword">new</span> Blob([css], { <span class="hljs-attr">type</span>: <span class="hljs-string">"text/css"</span> });
+
+	<span class="hljs-keyword">var</span> oldSrc = linkElement.href;
+
+	linkElement.href = URL.createObjectURL(blob);
+
+	<span class="hljs-keyword">if</span>(oldSrc)
+		URL.revokeObjectURL(oldSrc);
+}
+
+
+<span class="hljs-comment">/***/</span> }),
+
+<span class="hljs-comment">/***/</span> <span class="hljs-number">713</span>:
+<span class="hljs-comment">/***/</span> (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">module, exports, __webpack_require__</span>) </span>{
+
+<span class="hljs-built_in">module</span>.exports = __webpack_require__(<span class="hljs-number">391</span>);
+
+
+<span class="hljs-comment">/***/</span> })
+
+},[<span class="hljs-number">713</span>]);
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap" id="sourcemappingurlstyles.bundle.map">
+  <h1>
+    <a href="#sourcemappingurlstyles.bundle.map" name="sourcemappingurlstyles.bundle.map" class="pilcrow"></a>
+sourceMappingURL=styles.bundle.map
+  </h1>
+</div>
+
+        </td>
+        <td class="code highlight">
+          <pre class="javascript"></pre>
+        </td>
+      </tr>
+    
+  </tbody>
+</table>
+
+  </div>
+</body>
+</html>
