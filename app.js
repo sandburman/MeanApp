@@ -9,18 +9,18 @@ const config = require('./config/database');
 mongoose.connect(config.database);
 
 mongoose.connection.on('connected', () => {
-   console.log('Connected to database ' + config.database); 
+   console.log('Connected to database ' + config.database);
 });
 
 mongoose.connection.on('error', (err) => {
-   console.log('Error connecting to database ' + err); 
+   console.log('Error connecting to database ' + err);
 });
 
 const app = express();
 
 const users = require('./routes/users')
 
-const port = 3000;
+const port = 80;
 
 // Use Cors middleware
 app.use(cors());
