@@ -40,7 +40,7 @@ var ValidateService = (function () {
     ], ValidateService);
     return ValidateService;
 }());
-//# sourceMappingURL=E:/Code/MEAN/sqlfinder/angular-src/src/validate.service.js.map
+//# sourceMappingURL=E:/Code/GitRepo/MeanApp/angular-src/src/validate.service.js.map
 
 /***/ }),
 
@@ -75,7 +75,7 @@ if (__WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment *
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["enableProdMode"])();
 }
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_3__app_app_module__["a" /* AppModule */]);
-//# sourceMappingURL=E:/Code/MEAN/sqlfinder/angular-src/src/main.js.map
+//# sourceMappingURL=E:/Code/GitRepo/MeanApp/angular-src/src/main.js.map
 
 /***/ }),
 
@@ -109,7 +109,7 @@ var AppComponent = (function () {
     ], AppComponent);
     return AppComponent;
 }());
-//# sourceMappingURL=E:/Code/MEAN/sqlfinder/angular-src/src/app.component.js.map
+//# sourceMappingURL=E:/Code/GitRepo/MeanApp/angular-src/src/app.component.js.map
 
 /***/ }),
 
@@ -195,7 +195,7 @@ var AppModule = (function () {
     ], AppModule);
     return AppModule;
 }());
-//# sourceMappingURL=E:/Code/MEAN/sqlfinder/angular-src/src/app.module.js.map
+//# sourceMappingURL=E:/Code/GitRepo/MeanApp/angular-src/src/app.module.js.map
 
 /***/ }),
 
@@ -230,7 +230,7 @@ var DashboardComponent = (function () {
     ], DashboardComponent);
     return DashboardComponent;
 }());
-//# sourceMappingURL=E:/Code/MEAN/sqlfinder/angular-src/src/dashboard.component.js.map
+//# sourceMappingURL=E:/Code/GitRepo/MeanApp/angular-src/src/dashboard.component.js.map
 
 /***/ }),
 
@@ -265,7 +265,7 @@ var HomeComponent = (function () {
     ], HomeComponent);
     return HomeComponent;
 }());
-//# sourceMappingURL=E:/Code/MEAN/sqlfinder/angular-src/src/home.component.js.map
+//# sourceMappingURL=E:/Code/GitRepo/MeanApp/angular-src/src/home.component.js.map
 
 /***/ }),
 
@@ -329,7 +329,7 @@ var LoginComponent = (function () {
     return LoginComponent;
     var _a, _b, _c;
 }());
-//# sourceMappingURL=E:/Code/MEAN/sqlfinder/angular-src/src/login.component.js.map
+//# sourceMappingURL=E:/Code/GitRepo/MeanApp/angular-src/src/login.component.js.map
 
 /***/ }),
 
@@ -381,7 +381,7 @@ var NavbarComponent = (function () {
     return NavbarComponent;
     var _a, _b, _c;
 }());
-//# sourceMappingURL=E:/Code/MEAN/sqlfinder/angular-src/src/navbar.component.js.map
+//# sourceMappingURL=E:/Code/GitRepo/MeanApp/angular-src/src/navbar.component.js.map
 
 /***/ }),
 
@@ -430,7 +430,7 @@ var ProfileComponent = (function () {
     return ProfileComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=E:/Code/MEAN/sqlfinder/angular-src/src/profile.component.js.map
+//# sourceMappingURL=E:/Code/GitRepo/MeanApp/angular-src/src/profile.component.js.map
 
 /***/ }),
 
@@ -509,7 +509,7 @@ var RegisterComponent = (function () {
     return RegisterComponent;
     var _a, _b, _c, _d;
 }());
-//# sourceMappingURL=E:/Code/MEAN/sqlfinder/angular-src/src/register.component.js.map
+//# sourceMappingURL=E:/Code/GitRepo/MeanApp/angular-src/src/register.component.js.map
 
 /***/ }),
 
@@ -554,7 +554,7 @@ var AuthGuard = (function () {
     return AuthGuard;
     var _a, _b;
 }());
-//# sourceMappingURL=E:/Code/MEAN/sqlfinder/angular-src/src/auth.guard.js.map
+//# sourceMappingURL=E:/Code/GitRepo/MeanApp/angular-src/src/auth.guard.js.map
 
 /***/ }),
 
@@ -570,7 +570,7 @@ var AuthGuard = (function () {
 var environment = {
     production: false
 };
-//# sourceMappingURL=E:/Code/MEAN/sqlfinder/angular-src/src/environment.js.map
+//# sourceMappingURL=E:/Code/GitRepo/MeanApp/angular-src/src/environment.js.map
 
 /***/ }),
 
@@ -640,7 +640,7 @@ module.exports = "<h2 class=\"page-header\">Dashboard</h2>\n<p>Welcome to your d
 /***/ 683:
 /***/ (function(module, exports) {
 
-module.exports = "    <div class=\"jumbotron text-center\">\n      <h1>SQLFinder</h1>\n      <p>This portal provides a wide range of SQL knowledge base, can be personalised for better user experience.</p>\n      <div>\n        <p><a class=\"btn btn-primary\" [routerLink]=\"['/register']\">Register</a></p><p><a class=\"btn btn-primary\" [routerLink]=\"['/login']\">Login</a></p>\n      </div>\n    </div>\n\n    <div class=\"container\">\n      <!-- Example row of columns -->\n      <div class=\"row\">\n        <div class=\"col-md-4\">\n          <h2>SQL/Advance SQL</h2>\n          <p>Start here to search for your SQL needs, seach using keywords, syntax, oracle functions etc. </p>\n          <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">View details &raquo;</a></p>\n        </div>\n        <div class=\"col-md-4\">\n          <h2>PL/SQL</h2>\n          <p>Click here to start the hunt for Store Procedure, Loops, Cursors, Conditional Statement etc. </p>\n          <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">View details &raquo;</a></p>\n       </div>\n        <div class=\"col-md-4\">\n          <h2>DBA/Architecture</h2>\n          <p>Access this link to looks for Grants, Flashbacks, Restore Points, Database Architecture.</p>\n          <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">View details &raquo;</a></p>\n        </div>\n      </div>\n"
+module.exports = "    <div class=\"jumbotron text-center\">\n      <h1>Kaarvn</h1>\n      <p>This portal provides an interactive platform to meet the service providers.</p>\n      <div>\n        <p><a class=\"btn btn-primary\" [routerLink]=\"['/register']\">Register</a></p><p><a class=\"btn btn-primary\" [routerLink]=\"['/login']\">Login</a></p>\n      </div>\n    </div>\n\n    <div class=\"container\">\n      <!-- Example row of columns -->\n      <div class=\"row\">\n        <div class=\"col-md-4\">\n          <h2>Search</h2>\n          <p>Start here to search for your service needs, seach using keywords, type of services etc. </p>\n          <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">View details &raquo;</a></p>\n        </div>\n        <div class=\"col-md-4\">\n          <h2>Providers</h2>\n          <p>Click here to see the top Service Providers.</p>\n          <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">View details &raquo;</a></p>\n       </div>\n        <div class=\"col-md-4\">\n          <h2>Seekers</h2>\n          <p>Access this link to looks for Service Seekers.</p>\n          <p><a class=\"btn btn-default\" href=\"#\" role=\"button\">View details &raquo;</a></p>\n        </div>\n      </div>\n"
 
 /***/ }),
 
@@ -711,19 +711,19 @@ var AuthService = (function () {
     AuthService.prototype.registerUser = function (user) {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["Headers"]();
         headers.append('Content-Type', 'application/json');
-        return this.http.post('http://localhost:3000/users/register', user, { headers: headers }).map(function (res) { return res.json(); });
+        return this.http.post('users/register', user, { headers: headers }).map(function (res) { return res.json(); });
     };
     AuthService.prototype.authenticateUser = function (user) {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["Headers"]();
         headers.append('Content-Type', 'application/json');
-        return this.http.post('http://localhost:3000/users/authenticate', user, { headers: headers }).map(function (res) { return res.json(); });
+        return this.http.post('users/authenticate', user, { headers: headers }).map(function (res) { return res.json(); });
     };
     AuthService.prototype.getProfile = function () {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["Headers"]();
         this.loadToken();
         headers.append('Authorization', this.authToken);
         headers.append('Content-Type', 'application/json');
-        return this.http.get('http://localhost:3000/users/profile', { headers: headers }).map(function (res) { return res.json(); });
+        return this.http.get('users/profile', { headers: headers }).map(function (res) { return res.json(); });
     };
     AuthService.prototype.storeUserData = function (token, user) {
         localStorage.setItem('id_token', token);
@@ -750,7 +750,7 @@ var AuthService = (function () {
     return AuthService;
     var _a;
 }());
-//# sourceMappingURL=E:/Code/MEAN/sqlfinder/angular-src/src/auth.service.js.map
+//# sourceMappingURL=E:/Code/GitRepo/MeanApp/angular-src/src/auth.service.js.map
 
 /***/ })
 
